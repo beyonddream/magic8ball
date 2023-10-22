@@ -13,7 +13,7 @@ class Magic8BallTest < MiniTest::Test
     
     def test_consistency
       magic8ball = Magic8Ball.new(consistency:true)
-      # try enough times to be confident we are seeing random answers to same question
+      # try enough times to be confident we are not seeing random answers to same question
       20.times do
         answer = magic8ball.ask("Will I win the eurovision ?")
         assert_equal "Without a doubt", answer
