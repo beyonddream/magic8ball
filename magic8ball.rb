@@ -10,7 +10,7 @@ class Magic8Ball
         @consistency = consistency
     end
 
-    def ask(question="")
+    def ask(question=nil)
         return "You must ask a question!" unless question
         if @consistency
             hash = 0
