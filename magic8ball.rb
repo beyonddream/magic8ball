@@ -10,7 +10,8 @@ class Magic8Ball
     # answers_file_path - path to a file which contains list of possible answers.
     #   Defaults to the file within the app directory.
     #
-    # consistency - If true, then same question will always yield same random answer. If not, it returns a random answer everytime even for same question.
+    # consistency - If true, then same question will always yield same random answer.
+    #   If not, it returns a random answer everytime even for same question.
     #
     # Returns nothing.
     def initialize(answers_file_path:File.join(File.dirname(__FILE__), 'answers.txt'), consistency:false)
