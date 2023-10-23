@@ -5,7 +5,7 @@
 #
 class Magic8Ball
 
-    # Public: Setup magic 8 ball
+    # Public: Setup magic 8 ball.
     #
     # answers_file_path - path to a file which contains list of possible answers.
     #   Defaults to the file within the app directory.
@@ -22,11 +22,11 @@ class Magic8Ball
         @consistency = consistency
     end
 
-    # Public: main method to ask a question to magic 8 ball.
+    # Public: Main method to ask a question to magic 8 ball.
     #
     # question - question that is asked to magic 8 ball. Cannot be nil.
     #
-    # Returns the answer
+    # Returns the answer.
     def ask(question=nil)
         return "You must ask a question!" unless question
         if @consistency
